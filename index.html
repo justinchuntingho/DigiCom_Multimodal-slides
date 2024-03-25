@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Image and Text Analysis using Multi-modal Embeddings</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/scipo.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div class="withbg">
+					<h4>Digital Communication Methds Lab</h4>
+					<h3>Image and Text Topic Modelling using <br>Multi-modal Embeddings</h3>
+					<h4 style ="color:#333">Justin Chun-ting Ho</h4>
+					<small>Amsterdam School of Communication Research</small>
+					<p><img src="uvalogo.png" width="32%" style="background:none; border:none; box-shadow:none;">
+						<img src="ascorlogo.png" width="40%" style="background:none; border:none; box-shadow:none;"></p>
+
+				</div>
+				</section>
+				<section>
+					<h3>A Walk Through the History of <br>Automated Content Analysis</h3>
+				</section>
+				<section>
+					<h3>Bag-of-words Approahes</h3>
+					<ul>
+						<li>2004: Opinion Lexicon (Hu and Liu, KDD-2004)</li>
+						<li>2008: Wordfish (Slapin and Proksch)</li>
+						<li>2012: Probabilistic Topic Models (David M. Blei)</li>
+					</ul>
+				</section>
+				<section>
+					<img src="GrimmerStewart2013.png" width="80%" style="background:none; border:none; box-shadow:none;"><br>
+					<small><a href="https://www.cambridge.org/core/journals/political-analysis/article/text-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-texts/F7AAC8B2909441603FEB25C156448F20?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark">(Grimmer and Stewart, 2013)</a></small>
+				</section>
+				<section>
+					<h2>Word Embeddings Approaches</h2>
+				</section>
+				<section>
+					<section data-background-image="https://arize.com/wp-content/uploads/2022/06/blog-king-queen-embeddings.jpg" data-background-size="contain">
+						<div style="background-color:rgba(255,255,255,0.7)">
+							<h2>2013: Word2vec</h2>
+						</div>
+					</section>
+					<section data-background-image="https://arize.com/wp-content/uploads/2022/06/blog-king-queen-embeddings.jpg" data-background-size="contain">
+					</section>
+				</section>
+				<section data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/The-Transformer-model-architecture.png/400px-The-Transformer-model-architecture.png" data-background-size="contain">
+					<div style="background-color:rgba(255,255,255,0.7)">
+						<h2>2017: Transformers</h2>
+					</div>
+				</section>
+
+				<section data-background-image="https://sesameworkshop.org/wp-content/uploads/2023/03/presskit_ss_bio_bert.png" data-background-size="contain">
+					<div style="background-color:rgba(255,255,255,0.7)">
+						<h2>2018: BERT</h2>
+					</div>
+				</section>
+				<section>
+					<h3>BERTopic</h3>
+					<img src="bertopic.webp" width="50%" style="background:none; border:none; box-shadow:none;"><br>
+					<small><a href="https://doi.org/10.48550/arXiv.2203.05794">(Grootendorst, 2022)</a></small>
+				</section>
+				<section>
+					<h2>Image Analysis</h2>
+				</section>
+				<section>
+					Automatic analysis of image, audio, and video content for a long time seemed nigh impossible. <br> ---- <a href="https://doi.org/10.1080/19312458.2023.2261372">Kroon et al. (2023)</a>
+				</section>
+				<section>
+					<h3>Pixels</h3>
+					<img src="https://www.ultimate-photo-tips.com/image-files/pixels.jpg" width="80%" style="background:none; border:none; box-shadow:none;"><br>
+					<small>Credit: Julie Waterhouse Photography; Ultimate-Photo-Tips.com</small>
+				</section>
+				<section data-background-image="cnn_embed_1k.jpeg">
+				<div style="background-color:rgba(255,255,255,0.7)">
+					<h2>2009: ImageNet</h2>
+				</div>
+				</section>
+				<section data-background-image="https://docs.clarifai.com/assets/images/search-34e510ba5f6e5570e39cee6136798cde.jpg">
+				<div style="background-color:rgba(255,255,255,0.7)">
+					<h2>2013: Clarifai</h2>
+				</div>
+				</section>
+				<section data-background-image="https://storage.googleapis.com/gweb-cloudblog-publish/images/cloud-vision-26x0g.max-700x700.PNG" data-background-size="contain">
+				<div style="background-color:rgba(255,255,255,0.7)">
+					<h2>2016: Google Cloud Vision</h2>
+				</div>
+				</section>
+				<section>
+					<h2>The Problem</h2>
+				</section>
+				<section data-background-image="cnn_embed_1k.jpeg">
+				</section>
+				<section>
+					<h2>Recent Development</h2>
+				</section>
+				<section data-background-image="https://www.webfx.com/wp-content/uploads/2023/07/openai-clip2.jpg" data-background-size="contain">
+				</section>
+				<section>
+					<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*tz_yyNvvna59tYDoqD4CUg.png" width="80%" style="background:none; border:none; box-shadow:none;"><br>
+					<small><a href="https://doi.org/10.48550/arXiv.2103.00020">(Radford et al, 2021)</a></small>
+				</section>
+					<section>
+						<h3>Three approaches</h3>
+						<img src="approaches.png" class="stretch" style="background:none; border:none; box-shadow:none;">
+					</section>
+                      <section data-background="monkeyr.gif">
+                          <h2 style = "background-color:rgba(255,255,255,0.7);">Time for Python</h2>
+                      </section>
+					<section>
+						<h2>Thank You!</h2>
+						<h4>Twitter: @justin_ct_ho<br>Github: justinchuntingho<br>Email: j.c.ho@uva.nl</h4>
+					</section>
+				</div>
+			</div>
+
+			<script src="dist/reveal.js"></script>
+			<script src="plugin/notes/notes.js"></script>
+			<script src="plugin/markdown/markdown.js"></script>
+			<script src="plugin/highlight/highlight.js"></script>
+			<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+				Reveal.initialize({
+					hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+					plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				});
+			</script>
+		</body>
+		</html>
